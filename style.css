@@ -1,0 +1,314 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #000000;
+}
+
+/* Cabeçalho */
+header {
+  background: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 100%;
+}
+
+header .logo img {
+  height: 120px;
+}
+
+/* Navegação */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Menu Hambúrguer */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  z-index: 10001;
+}
+
+.menu-toggle .bar {
+  width: 30px;
+  height: 3px;
+  background-color: #000000;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+/* Menu de Navegação */
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  margin-left: 20px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+  color: #ffbcbc;
+}
+
+/* Responsividade do Menu */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex; /* Exibe o ícone do menu no celular */
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    text-align: center;
+    z-index: 10000;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .nav-list li {
+    margin: 10px 0;
+  }
+}
+
+/* Animação do ícone do menu */
+.menu-toggle.active .bar:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Seção da Cartilha */
+.cartilha-section {
+  background: url('imagens/cartilha-background.png') no-repeat center center/cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+/* Efeito de sobreposição (dark overlay) */
+.cartilha-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Conteúdo da seção da cartilha */
+.cartilha-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Estilo do botão */
+.btn-cartilha {
+  background: linear-gradient(180deg, #ffbcbc, #fff, #ffbcbc);
+  color: #000000;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out, transform 0.3s;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.btn-cartilha:hover {
+  background: linear-gradient(180deg, #ffbcbc, #fff, #ffbcbc);
+  transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+  background: url('hero-bg.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content .btn {
+  background: #ffbcbc;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.hero-content .btn:hover {
+  background: #ffbcbc;
+}
+
+/* Seções */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+@media (max-width: 768px) {
+  .card {
+width: 100%;
+}
+}
+
+.card:hover {
+  transform: scale(1.197);
+  background-color: #c7c7c7;
+}
+
+.card i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ffbcbc;
+}
+
+/* Botão do WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  animation: pulsar 0.9s infinite ease-in-out;
+  z-index: 9999;
+}
+
+/* Efeito ao passar o mouse */
+.whatsapp-float:hover {
+  background: #1ebc57;
+  transform: scale(1.2);
+}
+
+/* Rodapé */
+footer {
+  background: #000000;
+  color: #ffbcbc;
+  text-align: center;
+  padding: 20px;
+}
+
+footer .social-links a {
+  color: #ffbcbc;
+  margin: 0 10px;
+  font-size: 1.5rem;
+}
+
+footer img {
+  width: 60px;
+}
+
+/* Animação de pulsação */
+@keyframes pulsar {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(37, 211, 102, 0.7);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(37, 211, 102, 0.9);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(37, 211, 102, 0.7);
+  }
+}
+
