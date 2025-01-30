@@ -47,7 +47,7 @@ nav {
 .menu-toggle .bar {
   width: 30px;
   height: 3px;
-  background-color: #000000;
+  background-color: #d60f46;
   margin: 5px 0;
   transition: 0.3s;
 }
