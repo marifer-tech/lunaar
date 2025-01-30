@@ -64,7 +64,7 @@ nav {
 
 .nav-list li a {
   text-decoration: none;
-  color: #fff;
+  color: #000000;
   font-weight: 500;
   transition: color 0.3s;
 }
@@ -82,7 +82,7 @@ nav {
   .nav-list {
     display: none;
     flex-direction: column;
-    background: #fff;
+    background: #000000;
     width: 100%;
     position: absolute;
     top: 80px;
