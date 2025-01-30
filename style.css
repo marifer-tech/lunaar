@@ -82,7 +82,7 @@ nav {
   .nav-list {
     display: none;
     flex-direction: column;
-    background: #000000;
+    background: #d60f46;
     width: 100%;
     position: absolute;
     top: 80px;
