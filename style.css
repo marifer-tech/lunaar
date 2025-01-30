@@ -153,7 +153,7 @@ nav {
 
 /* Estilo do botão */
 .btn-cartilha {
-  background: linear-gradient(180deg, #468586, #fff, #468586);
+  background: #468586;
   color: #000000;
   padding: 15px 25px;
   text-decoration: none;
