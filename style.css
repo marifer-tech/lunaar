@@ -8,12 +8,12 @@
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
-  color: #000000;
+  color: #d60f46;
 }
 
 /* Cabeçalho */
 header {
-  background: #fff;
+  background: #ffcd51;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -64,13 +64,13 @@ nav {
 
 .nav-list li a {
   text-decoration: none;
-  color: #000000;
+  color: #d60f46;
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .nav-list li a:hover {
-  color: #ffbcbc;
+  color: #468586;
 }
 
 /* Responsividade do Menu */
@@ -154,7 +154,7 @@ nav {
 /* Estilo do botão */
 .btn-cartilha {
   background: #468586;
-  color: #000000;
+  color: #fff;
   padding: 15px 25px;
   text-decoration: none;
   font-size: 1.2rem;
@@ -166,7 +166,7 @@ nav {
 }
 
 .btn-cartilha:hover {
-  background: linear-gradient(180deg, #ffbcbc, #fff, #ffbcbc);
+  background: #468586;
   transform: scale(1.1);
 }
 
@@ -209,6 +209,7 @@ nav {
 .section {
   padding: 60px 20px;
   text-align: center;
+  background-color: #ffcd51;
 }
 
 .section h2 {
@@ -224,7 +225,7 @@ nav {
 }
 
 .card {
-  background: #f9f9f9;
+  background: #468586;
   padding: 20px;
   border-radius: 10px;
   width: 30%;
@@ -232,6 +233,7 @@ nav {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s;
+  color: #ffcd51;
 }
 
 @media (max-width: 768px) {
@@ -242,13 +244,13 @@ width: 100%;
 
 .card:hover {
   transform: scale(1.197);
-  background-color: #c7c7c7;
+  background-color: #468586;
 }
 
 .card i {
   font-size: 2rem;
   margin-bottom: 10px;
-  color: #ffbcbc;
+  color: #ffcd51;
 }
 
 /* Botão do WhatsApp */
@@ -256,10 +258,10 @@ width: 100%;
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #25d366;
+  background: #468586;
   color: #fff;
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -274,20 +276,20 @@ width: 100%;
 
 /* Efeito ao passar o mouse */
 .whatsapp-float:hover {
-  background: #1ebc57;
+  background: #468586;
   transform: scale(1.2);
 }
 
 /* Rodapé */
 footer {
-  background: #000000;
-  color: #ffbcbc;
+  background: #468586;
+  color: #d60f46;
   text-align: center;
   padding: 20px;
 }
 
 footer .social-links a {
-  color: #ffbcbc;
+  color: #d60f46;
   margin: 0 10px;
   font-size: 1.5rem;
 }
@@ -311,4 +313,3 @@ footer img {
     box-shadow: 0 0 10px rgba(37, 211, 102, 0.7);
   }
 }
-
