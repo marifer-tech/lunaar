@@ -64,13 +64,13 @@ nav {
 
 .nav-list li a {
   text-decoration: none;
-  color: #d60f46;
+  color: #fff;
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .nav-list li a:hover {
-  color: #468586;
+  color: #000000;
 }
 
 /* Responsividade do Menu */
@@ -283,13 +283,13 @@ width: 100%;
 /* Rodapé */
 footer {
   background: #468586;
-  color: #d60f46;
+  color: #fff;
   text-align: center;
   padding: 20px;
 }
 
 footer .social-links a {
-  color: #d60f46;
+  color: #fff;
   margin: 0 10px;
   font-size: 1.5rem;
 }
