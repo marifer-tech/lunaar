@@ -6,19 +6,22 @@
   <title>Cartilha de Adoção - Associação Lunaar</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Botão do WhatsApp Flutuante -->
-  <a href="https://wa.me/5565992701706" class="whatsapp-float" target="_blank">
+  <a href="https://wa.me/5565992465672" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
 
   <!-- Cabeçalho -->
   <header>
     <div class="logo">
-      <a href ="https://projetolunaar.com/">
-      <img src="https://projetolunaar.com/images/logo-fundo-transparente-tracado-branco.png" alt="Logo Associação Lunaar">
-    </a>
+      <a href="https://projetolunaar.com/">
+        <img src="imagens/imagem.png" alt="Logo Associação Lunaar">
+      </a>
     </div>
     <nav>
       <div class="menu-toggle" id="mobile-menu">
@@ -28,112 +31,248 @@
       </div>
       <ul class="nav-list">
         <li><a href="#porque-adotar">Por que Adotar?</a></li>
-        <li><a href="#processo">Processo de Adoção</a></li>
-        <li><a href="#adaptacao">Adaptação no Lar</a></li>
+        <li><a href="#processo">Processo</a></li>
+        <li><a href="#adaptacao">Adaptação</a></li>
         <li><a href="#pos-adocao">Pós-Adoção</a></li>
         <li><a href="#contato">Contato</a></li>
+        <li><a href="pdf/cartilha.pdf" class="btn-nav" download>Baixar Cartilha</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <section class="cartilha-section">
-    <div class="cartilha-content">
-        <h2>Baixe a Cartilha Completa</h2>
-        <p>Obtenha todas as informações sobre adoção responsável.</p>
-        <a href="pdf/cartilha.pdf" class="btn-cartilha" download>Baixar Cartilha Completa</a>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Adoção Responsável</h1>
+      <p class="subtitle">Transforme vidas com amor e cuidado</p>
+      <div class="hero-buttons">
+        <a href="#porque-adotar" class="btn-primary">Saiba Mais</a>
+        <a href="pdf/cartilha.pdf" class="btn-secondary" download>Baixar Cartilha</a>
+      </div>
     </div>
-</section>
+    <div class="hero-overlay"></div>
+  </section>
+
+  <!-- Seção de Estatísticas -->
+  <section class="stats-section">
+    <div class="stats-container">
+      <div class="stat-item">
+        <span class="stat-number" data-count="1000">0</span>+
+        <span class="stat-label">Animais Resgatados</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-count="500">0</span>+
+        <span class="stat-label">Adoções Realizadas</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-count="50">0</span>+
+        <span class="stat-label">Voluntários</span>
+      </div>
+    </div>
+  </section>
 
   <!-- Seção 1: Por que Adotar? -->
   <section id="porque-adotar" class="section">
-    <h2>Por que Adotar?</h2>
+    <div class="section-header">
+      <h2>Por que Adotar?</h2>
+      <p class="section-subtitle">Descubra os benefícios de dar um lar a um animal necessitado</p>
+    </div>
     <div class="cards">
       <div class="card">
-        <i class="fas fa-heart"></i>
+        <div class="card-icon">
+          <i class="fas fa-heart"></i>
+        </div>
         <h3>Salve uma Vida</h3>
-        <p>Milhões de animais esperam por um lar.</p>
+        <p>Milhões de animais esperam por um lar amoroso. Sua adoção faz toda a diferença.</p>
       </div>
       <div class="card">
-        <i class="fas fa-home"></i>
+        <div class="card-icon">
+          <i class="fas fa-home"></i>
+        </div>
         <h3>Combate ao Abandono</h3>
-        <p>Adotar reduz o número de animais nas ruas.</p>
+        <p>Adotar reduz o número de animais nas ruas e combate o ciclo de abandono.</p>
       </div>
       <div class="card">
-        <i class="fas fa-paw"></i>
+        <div class="card-icon">
+          <i class="fas fa-paw"></i>
+        </div>
         <h3>Amor Incondicional</h3>
-        <p>Ganhe um companheiro fiel e cheio de amor.</p>
+        <p>Ganhe um companheiro fiel que retribuirá seu cuidado com amor infinito.</p>
       </div>
     </div>
   </section>
 
   <!-- Seção 2: Processo de Adoção -->
-  <section id="processo" class="section">
-    <h2>Processo de Adoção</h2>
-    <div class="steps">
+  <section id="processo" class="section process-section">
+    <div class="section-header">
+      <h2>Processo de Adoção</h2>
+      <p class="section-subtitle">Como adotar um animal através da Associação Lunaar</p>
+    </div>
+    <div class="process-steps">
       <div class="step">
-        <span>1</span>
-        <p>Entre em contato com o WhatsApp da associação.</p>
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h3>Contato Inicial</h3>
+          <p>Entre em contato pelo WhatsApp da associação para iniciar o processo.</p>
+        </div>
       </div>
       <div class="step">
-        <span>2</span>
-        <p>Seja entrevistado durante uma conversa.</p>
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h3>Entrevista</h3>
+          <p>Participe de uma conversa para alinhar expectativas e necessidades.</p>
+        </div>
       </div>
       <div class="step">
-        <span>3</span>
-        <p>Receba fotos e vídeos dos animais aptos para adoção.</p>
+        <div class="step-number">3</div>
+        <div class="step-content">
+          <h3>Conheça os Animais</h3>
+          <p>Receba fotos e vídeos dos animais disponíveis para adoção.</p>
+        </div>
       </div>
       <div class="step">
-        <span>4</span>
-        <p>Escolha o pet de maneira online.</p>
-       <div class="step">
-       <span>5</span>
-       <p>Combine o melhor dia e horário para ir buscá-lo.</p>
+        <div class="step-number">4</div>
+        <div class="step-content">
+          <h3>Escolha Online</h3>
+          <p>Selecione o pet que melhor se adapta ao seu estilo de vida.</p>
+        </div>
       </div>
+      <div class="step">
+        <div class="step-number">5</div>
+        <div class="step-content">
+          <h3>Busca Programada</h3>
+          <p>Combine o melhor dia e horário para receber seu novo amigo.</p>
+        </div>
+      </div>
+    </div>
+    <div class="process-cta">
+      <a href="https://wa.me/5565992465672" class="btn-primary" target="_blank">Iniciar Processo</a>
     </div>
   </section>
 
   <!-- Seção 3: Adaptação no Lar -->
-  <section id="adaptacao" class="section">
-    <h2>Adaptação no Lar</h2>
-    <div class="tips">
-      <div class="tip">
-        <i class="fas fa-bed"></i>
-        <p>Prepare um espaço confortável.</p>
+  <section id="adaptacao" class="section adaptation-section">
+    <div class="section-header">
+      <h2>Adaptação no Lar</h2>
+      <p class="section-subtitle">Dicas para uma transição suave para seu novo companheiro</p>
+    </div>
+    <div class="adaptation-grid">
+      <div class="adaptation-item">
+        <div class="adaptation-icon">
+          <i class="fas fa-bed"></i>
+        </div>
+        <div class="adaptation-content">
+          <h3>Espaço Confortável</h3>
+          <p>Prepare um cantinho tranquilo com cama, cobertores e brinquedos.</p>
+        </div>
       </div>
-      <div class="tip">
-        <i class="fas fa-bowl-food"></i>
-        <p>Tenha comida e água adequadas.</p>
+      <div class="adaptation-item">
+        <div class="adaptation-icon">
+          <i class="fas fa-bowl-food"></i>
+        </div>
+        <div class="adaptation-content">
+          <h3>Alimentação Adequada</h3>
+          <p>Mantenha água fresca e ração de qualidade específica para a espécie e idade.</p>
+        </div>
       </div>
-      <div class="tip">
-        <i class="fas fa-shield-alt"></i>
-        <p>Garanta a segurança do animal.</p>
+      <div class="adaptation-item">
+        <div class="adaptation-icon">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <div class="adaptation-content">
+          <h3>Segurança</h3>
+          <p>Proteja janelas, remova plantas tóxicas e guarde produtos perigosos.</p>
+        </div>
+      </div>
+      <div class="adaptation-item">
+        <div class="adaptation-icon">
+          <i class="fas fa-heartbeat"></i>
+        </div>
+        <div class="adaptation-content">
+          <h3>Saúde</h3>
+          <p>Agende uma consulta veterinária para check-up e orientações.</p>
+        </div>
       </div>
     </div>
   </section>
 
+ 
+
   <!-- Seção 4: Pós-Adoção -->
-  <section id="pos-adocao" class="section">
-    <h2>Pós-Adoção</h2>
-    <div class="post-adoption">
-      <p>Ajude seu novo amigo a se adaptar com paciência e carinho.</p>
-      <a href="https://wa.me/5565992701706" class="btn">Precisa de Ajuda? Fale Conosco!</a>
+  <section id="pos-adocao" class="section post-adoption-section">
+    <div class="post-adoption-content">
+      <h2>Suporte Pós-Adoção</h2>
+      <p>Não deixamos você sozinho nessa jornada. Oferecemos orientação contínua para garantir uma adaptação perfeita.</p>
+      <div class="support-options">
+        <div class="support-item">
+          <i class="fas fa-phone-alt"></i>
+          <span>Suporte por telefone</span>
+        </div>
+        <div class="support-item">
+          <i class="fas fa-comments"></i>
+          <span>Grupo de adotantes</span>
+        </div>
+        <div class="support-item">
+          <i class="fas fa-calendar-alt"></i>
+          <span>Eventos mensais</span>
+        </div>
+      </div>
+      <a href="https://wa.me/5565992465672" class="btn-primary" target="_blank">Precisa de Ajuda?</a>
+    </div>
+    <div class="post-adoption-image">
+      <!-- Imagem ilustrativa -->
+    </div>
+  </section>
+
+ 
+
+  <!-- Seção CTA Final -->
+  <section class="section final-cta">
+    <h2>Pronto para mudar uma vida?</h2>
+    <p>Adote um animal e ganhe um amigo para sempre</p>
+    <div class="cta-buttons">
+      <a href="https://wa.me/5565992465672" class="btn-primary" target="_blank">Quero Adotar</a>
+      <a href="#porque-adotar" class="btn-secondary">Saber Mais</a>
     </div>
   </section>
 
   <!-- Rodapé -->
   <footer id="contato">
     <div class="footer-content">
-      <div class="social-links">
-        <a href="https://www.instagram.com/projetolunaar/"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.facebook.com/ProjetoLunaar"><i class="fab fa-facebook"></i></a>
-        <a href="https://wa.me/5565992701706"><i class="fab fa-whatsapp"></i></a>
+      <div class="footer-logo">
+        <img src="imagens/imagem.png" alt="Logo Associação Lunaar">
       </div>
+      <div class="footer-links">
+        <div class="footer-column">
+          <h3>Navegação</h3>
+          <ul>
+            <li><a href="#porque-adotar">Por que Adotar?</a></li>
+            <li><a href="#processo">Processo</a></li>
+            <li><a href="#adaptacao">Adaptação</a></li>
+            <li><a href="#pos-adocao">Pós-Adoção</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Contato</h3>
+          <ul>
+            <li><i class="fas fa-phone-alt"></i>(65) 99246-5672)</li>
+            <li><i class="fas fa-envelope"></i> contato@projetolunaar.com</li>
+            <li><i class="fas fa-map-marker-alt"></i> Cuiabá, MT</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Redes Sociais</h3>
+          <div class="social-links">
+            <a href="https://www.instagram.com/projetolunaar/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/ProjetoLunaar" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/5565992465672" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
       <p>&copy; 2023 Associação Lunaar. Todos os direitos reservados.</p>
-      <p>Desenvolvido por Mariana Silva | EagleWeb.</p>
-      <a href="https://mariana-silva.netlify.app">
-      <img src="imagens/eagleweb.png">
-    </a>
+      <p class="developer-credit">Desenvolvido por <a href="https://mariana-silva.netlify.app" target="_blank">Mariana Silva | EagleWeb</a></p>
     </div>
   </footer>
 
